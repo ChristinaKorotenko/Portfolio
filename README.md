@@ -11,6 +11,10 @@ yarn start
 
 Откройте `http://localhost:5173`.
 
+### GitHub Pages
+
+Сборка складывается в `docs/` (`yarn build`). В репозитории: **Settings → Pages → Build and deployment → Branch `main`, Folder `/docs`**.
+
 ### Что внутри
 
 - `src/sections/*`: секции страницы (Hero, How I work, Projects, Testimonials, Footer)

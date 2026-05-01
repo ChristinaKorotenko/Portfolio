@@ -6,6 +6,11 @@ import react from "@vitejs/plugin-react";
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
   base: mode === "production" ? "/Portfolio/" : "/",
+  build: {
+    // GitHub Pages (branch deploy) only publishes / or /docs — not /dist
+    outDir: "docs",
+    emptyOutDir: true
+  },
   server: {
     port: 5173,
     strictPort: true
