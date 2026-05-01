@@ -10,10 +10,15 @@ export function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="section"
+      className="section orb-right"
       data-gradient-a="140,0,255"
       data-gradient-b="255,60,200"
       data-gradient-c="0,255,240"
+      style={{
+        "--sga": "140,0,255",
+        "--sgb": "255,60,200",
+        "--sgc": "0,255,240"
+      }}
     >
       <div className="section-bg-orb" aria-hidden="true" />
       <div className="container">
@@ -35,7 +40,15 @@ export function TestimonialsSection() {
               }}
             >
               <div className="quote-bg" aria-hidden="true" />
-              <blockquote>“{t.quote}”</blockquote>
+              <blockquote>
+                <span className="quote-mark" aria-hidden="true">
+                  “
+                </span>
+                {t.quote}
+                <span className="quote-mark" aria-hidden="true">
+                  ”
+                </span>
+              </blockquote>
               <figcaption>
                 <span className="quote-name">{t.name}</span>
                 <span className="quote-role">{t.role}</span>
@@ -52,7 +65,15 @@ export function TestimonialsSection() {
       >
         {active ? (
           <>
-            <p className="modal-quote">“{active.quote}”</p>
+            <p className="modal-quote">
+              <span className="quote-mark" aria-hidden="true">
+                “
+              </span>
+              {active.quote}
+              <span className="quote-mark" aria-hidden="true">
+                ”
+              </span>
+            </p>
             {active.details?.map((p) => (
               <p key={p} className="modal-text">
                 {p}

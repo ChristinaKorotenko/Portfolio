@@ -23,22 +23,35 @@ export const siteContent = {
       {
         title: "Research",
         text:
-          "I believe everything should be measured and monitored regularly — not for control, but for clarity. Analytics helps me stay close to what’s actually happening."
+          "I believe everything should be measured and monitored regularly — not for control, but for clarity. Analytics helps me stay close to what’s actually happening.",
+        tools: [
+          "Amplitude",
+          "Google Analytics",
+          "UXcam",
+          "OneSignal",
+          "AmoCRM",
+          "Adapty",
+          "AppsFlyer",
+          "Qonversion",
+          "AppStoreConnect",
+          "PlayConsole",
+          "Claude",
+          "Typeform",
+          "Web2Wave",
+          "WordPress"
+        ]
       },
       {
         title: "Plan",
         text:
-          "I love working with visualization to collect and organize ideas, make task structures easier to understand, and present the logic of a workflow."
+          "I love working with visualization to collect and organize ideas, make task structures easier to understand, and present the logic of a workflow.",
+        tools: ["Figma", "Miro"]
       },
       {
         title: "Execute",
         text:
-          "I work with modern flexible or classic waterfall and hybrid project management methodologies. This way I build communication with a team and increase its efficiency."
-      },
-      {
-        title: "Background",
-        text:
-          "Professionally, I come from Applied Linguistics, which means I think about problems in patterns, structures, and meaning."
+          "I work with modern flexible or classic waterfall and hybrid project management methodologies. This way I build communication with a team and increase its efficiency.",
+        tools: ["Agile", "Scrum", "Kanban", "OKR", "KPI", "Jira", "Asana", "Notion", "Trello"]
       }
     ]
   },
@@ -146,6 +159,16 @@ export const siteContent = {
         details: [
           "Requirements are crisp, priorities are stable, and changes are communicated early.",
           "She protects the team’s focus and keeps the feedback loop tight with stakeholders."
+        ]
+      },
+      {
+        quote:
+          "Brings clarity and momentum: strong research, crisp communication, and a consistent bias toward measurable outcomes.",
+        name: "Name Surname",
+        role: "Growth Lead",
+        details: [
+          "She frames the problem, sets the success metrics, and keeps everyone aligned on the next best action.",
+          "Delivery is steady, and decisions are always grounded in evidence rather than opinions."
         ]
       }
     ]
