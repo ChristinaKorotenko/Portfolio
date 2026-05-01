@@ -1,4 +1,4 @@
-# Portfolio-ProductManager
+# Portfolio
 
 React (Vite) одностраничное портфолио Product & Project Manager.
 
@@ -16,5 +16,4 @@ yarn start
 - `src/sections/*`: секции страницы (Hero, How I work, Projects, Testimonials, Footer)
 - `src/components/*`: общие компоненты (шапка/навигация)
 - `src/content/siteContent.js`: тексты/контент
-- `src/hooks/useActiveSectionGradient.js`: смена градиентов по текущей секции
 - `src/styles/global.css`: стили + адаптив
