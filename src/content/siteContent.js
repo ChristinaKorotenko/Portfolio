@@ -145,7 +145,7 @@ export const siteContent = {
       },
       {
         quote:
-          "Strong product sense with a rare balance of user empathy and business logic — always brings options, risks and metrics.",
+          "Kristina Korotenko made a significant contribution to establishing processes in the marketing department. Kristina demonstrated herself as an employee who is willing to take initiative in work-related matters and eager to learn and grow professionally…",
         name: "Name Surname",
         role: "CEO / Founder",
         modalPdfSrc: educateOnlineReviewPdfUrl,
