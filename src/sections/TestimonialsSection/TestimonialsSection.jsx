@@ -1,19 +1,12 @@
 import { siteContent } from "../../content/siteContent";
 import { useMemo, useState } from "react";
 import { Modal } from "../../components/Modal/Modal";
+import { PdfRasterPages } from "../../components/PdfRasterPages/PdfRasterPages";
 
 export function TestimonialsSection() {
   const { testimonials } = siteContent;
   const [active, setActive] = useState(null);
   const items = useMemo(() => testimonials.items, [testimonials.items]);
-
-  function activateTestimonial(t) {
-    if (t.modalPdfSrc) {
-      window.open(t.modalPdfSrc, "_blank", "noopener,noreferrer");
-      return;
-    }
-    setActive(t);
-  }
 
   return (
     <section
@@ -42,11 +35,11 @@ export function TestimonialsSection() {
               className="quote quote-clickable"
               role="listitem"
               tabIndex={0}
-              onClick={() => activateTestimonial(t)}
+              onClick={() => setActive(t)}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
                   e.preventDefault();
-                  activateTestimonial(t);
+                  setActive(t);
                 }
               }}
             >
@@ -72,25 +65,30 @@ export function TestimonialsSection() {
       <Modal
         open={Boolean(active)}
         title={active ? `${active.name} — ${active.role}` : ""}
+        className={active?.modalPdfSrc ? "modal--pdf" : ""}
         onClose={() => setActive(null)}
       >
         {active ? (
-          <>
-            <p className="modal-quote">
-              <span className="quote-mark" aria-hidden="true">
-                “
-              </span>
-              {active.quote}
-              <span className="quote-mark" aria-hidden="true">
-                ”
-              </span>
-            </p>
-            {active.details?.map((p) => (
-              <p key={p} className="modal-text">
-                {p}
+          active.modalPdfSrc ? (
+            <PdfRasterPages src={active.modalPdfSrc} />
+          ) : (
+            <>
+              <p className="modal-quote">
+                <span className="quote-mark" aria-hidden="true">
+                  “
+                </span>
+                {active.quote}
+                <span className="quote-mark" aria-hidden="true">
+                  ”
+                </span>
               </p>
-            ))}
-          </>
+              {active.details?.map((p) => (
+                <p key={p} className="modal-text">
+                  {p}
+                </p>
+              ))}
+            </>
+          )
         ) : null}
       </Modal>
     </section>
