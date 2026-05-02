@@ -146,7 +146,7 @@ export const siteContent = {
       {
         quote:
           "Kristina Korotenko made a significant contribution to establishing processes in the marketing department. Kristina demonstrated herself as an employee who is willing to take initiative in work-related matters and eager to learn and grow professionally…",
-        name: "Maltseva Kseniya Vyacheslavovna",
+        name: "Maltseva Kseniya",
         role: "Team Lead Marketing",
         modalPdfSrc: educateOnlineReviewPdfUrl,
         details: [
