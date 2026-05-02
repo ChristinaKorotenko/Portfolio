@@ -1375,7 +1375,7 @@ a {
   width: min(620px, 100%);
   max-height: min(78vh, 760px);
   overflow: auto;
-  background: rgba(251, 250, 247, 0.96);
+  background: #f7f6f3;
   border-radius: 18px;
   border: 1px solid rgba(0, 0, 0, 0.10);
   padding: 18px 18px 16px;
@@ -1385,8 +1385,9 @@ a {
 }
 
 .modal--pdf {
-  width: min(920px, 100%);
-  max-height: min(90vh, 900px);
+  width: min(840px, 100%);
+  max-height: min(92vh, 880px);
+  overflow: hidden;
 }
 
 .modal-pdf-wrap {
@@ -1395,20 +1396,20 @@ a {
 
 .modal-pdf-pages {
   margin-top: 4px;
-  max-height: min(74vh, 760px);
-  overflow: auto;
-  padding: 4px;
+  padding: 8px 4px 4px;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.6);
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  overflow: visible;
 }
 
 .modal-pdf-canvas {
   border-radius: 8px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
 }
 
 .modal-pdf-page-gap {
-  height: 14px;
+  height: 6px;
 }
 
 .modal-pdf-loading {
