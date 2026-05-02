@@ -1,6 +1,6 @@
 import { useEffect, useId } from "react";
 
-export function Modal({ open, title, children, onClose }) {
+export function Modal({ open, title, children, onClose, className = "" }) {
   const titleId = useId().replaceAll(":", "");
 
   useEffect(() => {
@@ -22,7 +22,12 @@ export function Modal({ open, title, children, onClose }) {
         if (e.target === e.currentTarget) onClose?.();
       }}
     >
-      <div className="modal" role="dialog" aria-modal="true" aria-labelledby={titleId}>
+      <div
+        className={["modal", className].filter(Boolean).join(" ")}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
+      >
         <div className="modal-bg" aria-hidden="true" />
         <button className="modal-close" type="button" onClick={onClose} aria-label="Close">
           ×

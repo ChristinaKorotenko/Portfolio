@@ -1,3 +1,5 @@
+import educateOnlineReviewPdfUrl from "../../reviews/Educate Online.pdf?url";
+
 export const siteContent = {
   hero: {
     eyebrow: "Product & Project Manager • Berlin",
@@ -146,6 +148,7 @@ export const siteContent = {
           "Strong product sense with a rare balance of user empathy and business logic — always brings options, risks and metrics.",
         name: "Name Surname",
         role: "CEO / Founder",
+        modalPdfSrc: educateOnlineReviewPdfUrl,
         details: [
           "She comes prepared: multiple solution options, risk analysis, and clear measurement plans.",
           "Her discovery work is fast but grounded — it reduces uncertainty rather than producing slides."
