@@ -1,20 +1,28 @@
 import { useEffect, useId } from "react";
+import { createPortal } from "react-dom";
 
 export function Modal({ open, title, children, onClose, className = "" }) {
   const titleId = useId().replaceAll(":", "");
 
   useEffect(() => {
-    if (!open) return;
+    if (!open) return undefined;
+
     const onKeyDown = (e) => {
       if (e.key === "Escape") onClose?.();
     };
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
     window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
+    return () => {
+      window.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = prevOverflow;
+    };
   }, [open, onClose]);
 
   if (!open) return null;
 
-  return (
+  return createPortal(
     <div
       className="modal-overlay"
       role="presentation"
@@ -39,7 +47,8 @@ export function Modal({ open, title, children, onClose, className = "" }) {
         </div>
         <div className="modal-body">{children}</div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
 
