@@ -58,7 +58,7 @@ export const siteContent = {
     ]
   },
   projects: {
-    title: "Selected work",
+    title: "Selected projects",
     subtitle: "Click on a card to view details.",
     items: [
       {
