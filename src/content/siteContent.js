@@ -102,7 +102,7 @@ export const siteContent = {
       },
       {
         name: "Everypixel",
-        tags: ["AI", "Marketing", "B2B"],
+        tags: ["AI", "Brand", "B2B"],
         snippet:
           "Strengthened presence in the AI field through content and partnerships — outreach as positioning, not just distribution.",
         details: [
