@@ -96,7 +96,7 @@ export const siteContent = {
         meta: [
           { label: "Role", value: "Project Manager" },
           { label: "Ownership", value: "Growth & Acquisition" },
-          { label: "Focus", value: "Funnel Optimization & Systems" }
+          { label: "Focus", value: "Funnel Optimization" }
         ],
       },
       {
