@@ -102,17 +102,15 @@ export const siteContent = {
       {
         name: "Everypixel",
         tags: ["AI", "Brand", "B2B"],
-        snippet:
-          "A project within an AI solutions development company focused on strengthening its presence in the AI field through content and partnerships. We approached outreach not as distribution, but as positioning.",
-        highlightsLead: "What we focused on:",
-        highlights: [
-          "strategic placement in curated newsletters and expert channels",
-          "content designed for repostability and citation, not just publication",
-          "consistent editorial standards to build trust and authority over time"
-        ],
-        details: [
-          "Articles were picked up and shared by figures like Yann LeCun and Thomas Wolf, placing Everypixel directly into high-level AI discussions."
-        ],
+        snippet: `A project within an AI solutions development company focused on strengthening its presence in the AI field through content and partnerships. We approached outreach not as distribution, but as positioning. What we focused on:
+
+- Strategic placement in curated newsletters and expert channels
+- Content designed for repostability and citation, not just publication
+- Consistent editorial standards to build trust and authority over time
+
+Articles were picked up and shared by figures like Yann LeCun and Thomas Wolf, placing Everypixel directly into high-level AI discussions.`,
+        details: [],
+        highlights: [],
         meta: [
           { label: "Role", value: "Project Manager" },
           { label: "Focus", value: "Editorial" },
