@@ -86,18 +86,17 @@ export const siteContent = {
         snippet:
           "An e-learning platform project focused on turning marketing into a system. Instead of relying on assumptions, we approached growth as a process built around a few core ideas:",
         details: [
-          "Instead of relying on assumptions, we built a repeatable growth loop: identify patterns in CRM data → validate hypotheses → iterate landing pages and campaigns → codify what works.",
-          "This shifted marketing from a set of campaigns into a structured system where decisions are based on observed behavior and measurable signals."
+          "This shifted marketing from a set of campaigns into a structured, data-driven system where decisions are based on patterns."
         ],
         highlights: [
-          "Channel selection based on CRM patterns",
-          "Continuous landing/page flow review",
-          "Promotions aligned with real behavior"
+          "Identifying high-performing channels through CRM data",
+          "Continuously reviewing landing pages and campaign results to refine messaging and user flow",
+          "Aligning promotions with real user behavior"
         ],
         meta: [
           { label: "Role", value: "Project Manager" },
-          { label: "Scope", value: "Marketing ops" },
-          { label: "Outcome", value: "Repeatable growth" }
+          { label: "Ownership", value: "Growth Systems & Lifecycle Marketing" },
+          { label: "Focus", value: "Acquisition Optimization" }
         ],
       },
       {
