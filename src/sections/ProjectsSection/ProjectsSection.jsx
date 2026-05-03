@@ -88,7 +88,6 @@ export function ProjectsSection() {
       <div className="container">
         <div className="section-head">
           <h2>{projects.title}</h2>
-          <p>{projects.subtitle}</p>
         </div>
 
         <div className="projects-grid projects-grid--progetti">
