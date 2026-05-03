@@ -114,8 +114,8 @@ export const siteContent = {
         ],
         meta: [
           { label: "Role", value: "Project Manager" },
-          { label: "Ownership", value: "Brand & Communications" },
-          { label: "Focus", value: "Content Strategy & Partnerships" }
+          { label: "Ownership", value: "Brand & Marketing" },
+          { label: "Focus", value: "Content & Partnerships" }
         ],
       }
     ]
