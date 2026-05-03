@@ -182,6 +182,9 @@ export function ProjectsSection() {
               <span className="modal-tags">{active.tags.join(" · ")}</span>
             </p>
             <p className="modal-text">{active.snippet}</p>
+            {active.highlightsLead ? (
+              <p className="modal-highlights-lead">{active.highlightsLead}</p>
+            ) : null}
             {active.highlights?.length ? (
               <ul className="modal-list">
                 {active.highlights.map((h) => (

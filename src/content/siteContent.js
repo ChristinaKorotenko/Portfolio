@@ -103,15 +103,15 @@ export const siteContent = {
         name: "Everypixel",
         tags: ["AI", "Brand", "B2B"],
         snippet:
-          "Strengthened presence in the AI field through content and partnerships — outreach as positioning, not just distribution.",
-        details: [
-          "We focused on authority building: strategic placement in curated newsletters and expert channels, consistent editorial standards, and content designed for citation and repostability.",
-          "The outcome was high-quality distribution and real industry reach (shares by notable AI figures) that reinforced positioning."
-        ],
+          "A project within an AI solutions development company focused on strengthening its presence in the AI field through content and partnerships. We approached outreach not as distribution, but as positioning.",
+        highlightsLead: "What we focused on:",
         highlights: [
-          "Curated channel partnerships",
-          "Editorial standards for trust",
-          "Content engineered for citations"
+          "strategic placement in curated newsletters and expert channels",
+          "content designed for repostability and citation, not just publication",
+          "consistent editorial standards to build trust and authority over time"
+        ],
+        details: [
+          "Articles were picked up and shared by figures like Yann LeCun and Thomas Wolf, placing Everypixel directly into high-level AI discussions."
         ],
         meta: [
           { label: "Role", value: "Project Manager" },
