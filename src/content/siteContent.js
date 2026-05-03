@@ -71,8 +71,8 @@ export const siteContent = {
         ],
         highlights: [
           "Quiz entry point that drives engagement",
-          "lightweight onboarding that adapts to user interests from the first interaction",
-          "system of touchpoints (notifications, paywalls, content previews) designed to boost conversion"
+          "Lightweight onboarding that adapts to user interests from the first interaction",
+          "System of touchpoints (notifications, paywalls, content previews) designed to boost conversion"
         ],
         meta: [
           { label: "Role", value: "Product Manager" },
