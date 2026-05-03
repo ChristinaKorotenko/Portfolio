@@ -77,7 +77,7 @@ export const siteContent = {
         meta: [
           { label: "Role", value: "Product Manager" },
           { label: "Ownership", value: "Activation & Growth" },
-          { label: "Focus", value: "MVP & Conversion Funnels" }
+          { label: "Conversion", value: "Funnels" }
         ],
       },
       {
