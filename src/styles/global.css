@@ -597,8 +597,8 @@ a {
   background-image:
     radial-gradient(circle at 18% 30%, rgba(255, 133, 247, 1) 0%, rgba(255, 133, 247, 0) 46%),
     radial-gradient(circle at 56% 42%, rgba(58, 81, 255, 1) 0%, rgba(58, 81, 255, 0) 52%),
-    radial-gradient(circle at 78% 66%, rgba(255, 244, 141, 1) 0%, rgba(255, 244, 141, 0) 52%),
-    linear-gradient(90deg, rgb(255, 133, 247), rgb(58, 81, 255), rgb(255, 244, 141));
+    radial-gradient(circle at 78% 66%, rgba(168, 112, 255, 1) 0%, rgba(168, 112, 255, 0) 52%),
+    linear-gradient(90deg, rgb(255, 133, 247), rgb(58, 81, 255), rgb(168, 112, 255));
 }
 
 .hero-action-link--2 {
