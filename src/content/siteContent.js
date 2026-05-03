@@ -63,7 +63,7 @@ export const siteContent = {
     items: [
       {
         name: "TakeClass",
-        tags: ["SaaS", "Product", "B2C"],
+        tags: ["SaaS", "Growth", "B2C"],
         snippet:
           "A beauty and wellness e-learning platform project focused on improving the first touch and making online learning feel more like a guided, personal experience. We build an MVP mobile product around a few core ideas:",
         details: [
