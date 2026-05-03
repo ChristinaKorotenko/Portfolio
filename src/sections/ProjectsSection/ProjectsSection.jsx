@@ -88,6 +88,7 @@ export function ProjectsSection() {
       <div className="container">
         <div className="section-head">
           <h2>{projects.title}</h2>
+          <p>{projects.subtitle}</p>
         </div>
 
         <div className="projects-grid projects-grid--progetti">
@@ -178,14 +179,6 @@ export function ProjectsSection() {
                 {p}
               </p>
             ))}
-            <div className="modal-meta">
-              {active.meta.map((m) => (
-                <div key={m.label} className="modal-meta-item">
-                  <div className="modal-meta-k">{m.label}</div>
-                  <div className="modal-meta-v">{m.value}</div>
-                </div>
-              ))}
-            </div>
             {active.highlights?.length ? (
               <ul className="modal-list">
                 {active.highlights.map((h) => (
@@ -194,6 +187,14 @@ export function ProjectsSection() {
               </ul>
             ) : null}
             <p className="modal-text">{active.hoverText}</p>
+            <div className="modal-meta">
+              {active.meta.map((m) => (
+                <div key={m.label} className="modal-meta-item">
+                  <div className="modal-meta-k">{m.label}</div>
+                  <div className="modal-meta-v">{m.value}</div>
+                </div>
+              ))}
+            </div>
           </>
         ) : null}
       </Modal>
