@@ -79,8 +79,6 @@ export const siteContent = {
           { label: "MVP", value: "Mobile" },
           { label: "Focus", value: "First touch" }
         ],
-        hoverText:
-          "Quiz entry → adaptive onboarding → touchpoints (notifications, paywalls, previews) → scaled to web-to-app funnels."
       },
       {
         name: "EducateOnline",
@@ -101,7 +99,6 @@ export const siteContent = {
           { label: "Scope", value: "Marketing ops" },
           { label: "Outcome", value: "Repeatable growth" }
         ],
-        hoverText: "From campaigns → patterns → a structured, data-driven system."
       },
       {
         name: "Everypixel",
@@ -122,7 +119,6 @@ export const siteContent = {
           { label: "Focus", value: "Editorial" },
           { label: "Signal", value: "High-level shares" }
         ],
-        hoverText: "Articles were shared by Yann LeCun and Thomas Wolf."
       }
     ]
   },

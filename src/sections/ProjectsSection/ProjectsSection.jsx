@@ -194,7 +194,6 @@ export function ProjectsSection() {
                 </div>
               ))}
             </div>
-            <p className="modal-text">{active.hoverText}</p>
           </>
         ) : null}
       </Modal>
