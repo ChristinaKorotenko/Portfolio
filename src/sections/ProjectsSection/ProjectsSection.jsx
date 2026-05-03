@@ -150,8 +150,16 @@ export function ProjectsSection() {
 
                 <div className="project-content">
                   <div className="project-top">
-                    <span className="tag tag-invert">{p.tags[0]}</span>
-                    <span className="tag tag-invert tag-invert-muted">{p.tags[1]}</span>
+                    {p.tags.map((tag, i) => (
+                      <span
+                        key={`${p.name}-${tag}-${i}`}
+                        className={
+                          i === 0 ? "tag tag-invert" : "tag tag-invert tag-invert-muted"
+                        }
+                      >
+                        {tag}
+                      </span>
+                    ))}
                   </div>
                 </div>
 
@@ -171,7 +179,7 @@ export function ProjectsSection() {
         {active ? (
           <>
             <p className="modal-subtitle">
-              <span className="modal-tags">{active.tags.join(" • ")}</span>
+              <span className="modal-tags">{active.tags.join(" · ")}</span>
             </p>
             <p className="modal-text">{active.snippet}</p>
             {active.highlights?.length ? (

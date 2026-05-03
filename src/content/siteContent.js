@@ -63,7 +63,7 @@ export const siteContent = {
     items: [
       {
         name: "TakeClass",
-        tags: ["SaaS", "Product"],
+        tags: ["SaaS", "Product", "B2C"],
         snippet:
           "A beauty and wellness e-learning platform project focused on improving the first touch and making online learning feel more like a guided, personal experience. We build an MVP mobile product around a few core ideas:",
         details: [
@@ -82,7 +82,7 @@ export const siteContent = {
       },
       {
         name: "EducateOnline",
-        tags: ["Growth / Marketing", "B2C"],
+        tags: ["SaaS", "Growth", "B2C"],
         snippet:
           "An e-learning platform project focused on turning marketing into a system built on CRM data, continuous landing iteration, and behavior-based promotions.",
         details: [
@@ -102,7 +102,7 @@ export const siteContent = {
       },
       {
         name: "Everypixel",
-        tags: ["Brand / Marketing", "AI"],
+        tags: ["AI", "Marketing", "B2B"],
         snippet:
           "Strengthened presence in the AI field through content and partnerships — outreach as positioning, not just distribution.",
         details: [
