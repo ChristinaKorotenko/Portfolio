@@ -170,17 +170,10 @@ export function ProjectsSection() {
       >
         {active ? (
           <>
-            {active.modalHideTags ? null : (
-              <p className="modal-subtitle">
-                <span className="modal-tags">{active.tags.join(" • ")}</span>
-              </p>
-            )}
+            <p className="modal-subtitle">
+              <span className="modal-tags">{active.tags.join(" • ")}</span>
+            </p>
             <p className="modal-text">{active.snippet}</p>
-            {active.details?.map((p) => (
-              <p key={p} className="modal-text">
-                {p}
-              </p>
-            ))}
             {active.highlights?.length ? (
               <ul className="modal-list">
                 {active.highlights.map((h) => (
@@ -188,17 +181,20 @@ export function ProjectsSection() {
                 ))}
               </ul>
             ) : null}
-            {active.hoverText ? <p className="modal-text">{active.hoverText}</p> : null}
-            {active.modalHideMeta ? null : (
-              <div className="modal-meta">
-                {active.meta.map((m) => (
-                  <div key={m.label} className="modal-meta-item">
-                    <div className="modal-meta-k">{m.label}</div>
-                    <div className="modal-meta-v">{m.value}</div>
-                  </div>
-                ))}
-              </div>
-            )}
+            {active.details?.map((p) => (
+              <p key={p} className="modal-text">
+                {p}
+              </p>
+            ))}
+            <div className="modal-meta">
+              {active.meta.map((m) => (
+                <div key={m.label} className="modal-meta-item">
+                  <div className="modal-meta-k">{m.label}</div>
+                  <div className="modal-meta-v">{m.value}</div>
+                </div>
+              ))}
+            </div>
+            <p className="modal-text">{active.hoverText}</p>
           </>
         ) : null}
       </Modal>
