@@ -20,7 +20,7 @@ export const siteContent = {
   howIWork: {
     title: "I own the full product lifecycle",
     subtitle:
-      "A simple workflow that keeps me close to reality: research, planning, and execution.",
+      "I connect research, planning, and execution into a continuous loop of product decisions and measurable outcomes.",
     cards: [
       {
         title: "Research",
