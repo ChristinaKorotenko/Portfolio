@@ -15,7 +15,7 @@ export const siteContent = {
     ],
     aboutTitle: "About me",
     aboutText:
-      "I enjoy structure and a data-driven approach in everything I do. Whether it’s shaping ideas, running experiments, or analyzing results — turning messy concepts into clear systems is where I thrive the most."
+      "I enjoy structure and a data-driven approach in everything I do. Whether it’s shaping ideas, running experiments, or analyzing results, turning messy concepts into clear systems is where I thrive the most."
   },
   howIWork: {
     title: "How I work",
