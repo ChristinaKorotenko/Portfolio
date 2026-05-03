@@ -59,7 +59,7 @@ export const siteContent = {
   },
   projects: {
     title: "Selected projects",
-    subtitle: "Click on a card to view details.",
+    subtitle: "Click on a card to view details",
     items: [
       {
         name: "TakeClass",
