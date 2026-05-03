@@ -38,6 +38,15 @@ export function HowIWorkSection() {
           {howIWork.cards.map((card) => (
             <article key={card.title} className="manifesto-card">
               <h3>{card.title}</h3>
+              {Array.isArray(card.tags) && card.tags.length > 0 ? (
+                <div className="manifesto-tags" aria-label={`${card.title} focus areas`}>
+                  {card.tags.map((tag) => (
+                    <span className="manifesto-tag" key={tag}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              ) : null}
               <p>{card.text}</p>
               {Array.isArray(card.tools) && card.tools.length > 0 ? (
                 <div className="tool-chips" aria-label={`${card.title} tools`}>

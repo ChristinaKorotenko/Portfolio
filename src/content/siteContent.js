@@ -24,6 +24,7 @@ export const siteContent = {
     cards: [
       {
         title: "Research",
+        tags: ["UX research", "Usability testing", "Prototyping"],
         text:
           "I believe everything should be measured and monitored regularly — not for control, but for clarity. Analytics helps me stay close to what’s actually happening.",
         tools: [
@@ -45,12 +46,14 @@ export const siteContent = {
       },
       {
         title: "Plan",
+        tags: ["Roadmapping", "Discovery"],
         text:
           "I love working with visualization to collect and organize ideas, make task structures easier to understand, and present the logic of a workflow.",
         tools: ["Figma", "Miro"]
       },
       {
         title: "Execute",
+        tags: ["Documentation", "Vibe coding"],
         text:
           "I work with modern flexible or classic waterfall and hybrid project management methodologies. This way I build communication with a team and increase its efficiency.",
         tools: ["Agile", "Scrum", "Kanban", "OKR", "KPI", "Jira", "Asana", "Notion", "Trello"]
