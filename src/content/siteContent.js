@@ -95,8 +95,8 @@ export const siteContent = {
         ],
         meta: [
           { label: "Role", value: "Project Manager" },
-          { label: "Ownership", value: "Growth Systems & Lifecycle Marketing" },
-          { label: "Focus", value: "Acquisition Optimization" }
+          { label: "Ownership", value: "Growth Systems" },
+          { label: "Focus", value: "Acquisition" }
         ],
       },
       {
