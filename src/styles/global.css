@@ -1435,27 +1435,44 @@ a {
 
 .modal-close {
   position: absolute;
-  top: 10px;
+  top: 12px;
   right: 12px;
-  width: 34px;
-  height: 34px;
-  border-radius: 999px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
   border: 0;
-  background: transparent;
-  color: rgba(0, 0, 0, 0.72);
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.09);
+  color: rgba(0, 0, 0, 0.62);
   font-size: 22px;
   line-height: 1;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   cursor: pointer;
-  z-index: 2;
+  z-index: 6;
   pointer-events: auto;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.65) inset;
+  transition: background 160ms ease, color 160ms ease, transform 160ms ease;
 }
 
 .modal-close:hover {
-  background: rgba(0, 0, 0, 0.06);
+  background: rgba(0, 0, 0, 0.14);
+  color: rgba(0, 0, 0, 0.82);
+}
+
+.modal-close:focus-visible {
+  outline: 2px solid rgba(0, 0, 0, 0.35);
+  outline-offset: 2px;
+}
+
+.modal-close:active {
+  transform: scale(0.96);
 }
 
 .modal-head {
-  padding-right: 42px;
+  padding-right: 48px;
   position: relative;
   z-index: 2;
   background-color: var(--modal-surface-solid, #fbfaf7);
