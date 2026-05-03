@@ -64,15 +64,15 @@ export const siteContent = {
       {
         name: "TakeClass",
         tags: ["SaaS", "Product"],
-        modalHideTags: true,
-        modalHideMeta: true,
         snippet:
-          "A beauty and wellness e-learning platform project focused on improving the first touch and making online learning feel more like a guided, personal experience. We build an MVP mobile product around a few core ideas:",
-        details: [],
+          "A beauty and wellness e-learning platform focused on improving the first touch and making online learning feel more like a guided, personal experience.",
+        details: [
+          "The best-performing flows were then adapted and scaled into full web‑to‑app funnels."
+        ],
         highlights: [
-          "a quiz-based entry point that drives engagement",
-          "a lightweight onboarding that adapts to user interests from the first interaction",
-          "a system of touchpoints (notifications, paywalls, content previews) designed to boost conversion"
+          "Quiz entry point that drives engagement",
+          "Lightweight onboarding adapting to user interests",
+          "Touchpoints system designed to boost conversion"
         ],
         meta: [
           { label: "Role", value: "Product Manager" },
@@ -80,7 +80,7 @@ export const siteContent = {
           { label: "Focus", value: "First touch" }
         ],
         hoverText:
-          "The most effective flows were then adapted and scaled into full web-to-app funnels."
+          "Quiz entry → adaptive onboarding → touchpoints (notifications, paywalls, previews) → scaled to web-to-app funnels."
       },
       {
         name: "EducateOnline",
