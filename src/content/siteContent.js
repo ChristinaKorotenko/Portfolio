@@ -84,7 +84,7 @@ export const siteContent = {
         name: "EducateOnline",
         tags: ["SaaS", "Growth", "B2C"],
         snippet:
-          "An e-learning platform project focused on turning marketing into a system built on CRM data, continuous landing iteration, and behavior-based promotions.",
+          "An e-learning platform project focused on turning marketing into a system. Instead of relying on assumptions, we approached growth as a process built around a few core ideas:",
         details: [
           "Instead of relying on assumptions, we built a repeatable growth loop: identify patterns in CRM data → validate hypotheses → iterate landing pages and campaigns → codify what works.",
           "This shifted marketing from a set of campaigns into a structured system where decisions are based on observed behavior and measurable signals."
