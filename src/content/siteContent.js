@@ -18,7 +18,7 @@ export const siteContent = {
       "I enjoy structure and a data-driven approach in everything I do. Whether it’s shaping ideas, running experiments, or analyzing results — turning messy concepts into clear systems is where I thrive the most."
   },
   howIWork: {
-    title: "How I work",
+    title: "I own the full product lifecycle",
     subtitle:
       "A simple workflow that keeps me close to reality: research, planning, and execution.",
     cards: [
