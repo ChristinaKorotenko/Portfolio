@@ -1,4 +1,7 @@
-import educateOnlineReviewPdfUrl from "../../reviews/Educate Online.pdf?url";
+import takeClassImageUrl from "../images/TakeClass.jpg?url";
+import educateOnlineImageUrl from "../images/Educate Online.jpg?url";
+import everypixelAlinaImageUrl from "../images/Everypixel - Alina.jpg?url";
+import everypixelDmitryImageUrl from "../images/Everypixel - Dmitry.jpg?url";
 
 export const siteContent = {
   hero: {
@@ -24,9 +27,9 @@ export const siteContent = {
     cards: [
       {
         title: "Research",
-        tags: ["UX research", "Usability testing", "Prototyping"],
+        tags: ["UX research", "Prototyping", "User interviews", "Usability testing"],
         text:
-          "I believe everything should be measured and monitored regularly — not for control, but for clarity. Analytics helps me stay close to what’s actually happening.",
+          "I believe everything should be measured and monitored regularly — not for control, but for clarity. Analytics and research help me stay close to what’s actually happening.",
         tools: [
           "Amplitude",
           "Google Analytics",
@@ -46,7 +49,7 @@ export const siteContent = {
       },
       {
         title: "Plan",
-        tags: ["Roadmapping", "Discovery"],
+        tags: ["Roadmapping", "Prioritization", "Workflow design"],
         text:
           "I love working with visualization to collect and organize ideas, make task structures easier to understand, and present the logic of a workflow.",
         tools: ["Figma", "Miro"]
@@ -124,15 +127,16 @@ export const siteContent = {
     ]
   },
   testimonials: {
-    title: "Testimonials",
-    subtitle:
-      "Placeholders for now — swap with real quotes from managers when you’re ready.",
+    title: "What colleagues say about me:",
+    subtitle: "Click a card to read the full feedback",
     items: [
       {
         quote:
-          "She’s exceptional at turning ambiguity into a clear plan — and keeping the team aligned without extra meetings.",
-        name: "Name Surname",
-        role: "Head of Product",
+          "Kristina demonstrated a remarkable ability to lead and execute complex projects, maintaining a keen eye on product analytics.",
+        highlight: "remarkable ability to lead and execute",
+        modalImageSrc: takeClassImageUrl,
+        name: "Ihar Koshaleu",
+        role: "CPO at TakeClass",
         details: [
           "Kristina quickly decomposes complex problems into a clear structure, communicates trade-offs, and keeps progress transparent.",
           "She consistently connects work to measurable outcomes and makes the team feel aligned and confident about the next step."
@@ -140,20 +144,11 @@ export const siteContent = {
       },
       {
         quote:
-          "Kristina Korotenko made a significant contribution to establishing processes in the marketing department. Kristina demonstrated herself as an employee who is willing to take initiative in work-related matters and eager to learn and grow professionally…",
-        name: "Maltseva Kseniya",
-        role: "Team Lead Marketing",
-        modalPdfSrc: educateOnlineReviewPdfUrl,
-        details: [
-          "She comes prepared: multiple solution options, risk analysis, and clear measurement plans.",
-          "Her discovery work is fast but grounded — it reduces uncertainty rather than producing slides."
-        ]
-      },
-      {
-        quote:
-          "A reliable partner for engineering: crisp requirements, thoughtful trade-offs, and consistent delivery.",
-        name: "Name Surname",
-        role: "Engineering Manager",
+          "Her calmness, composure, and analytical mindset enable her to solve even the most complex cases.",
+        highlight: "calmness, composure, and analytical mindset",
+        modalImageSrc: educateOnlineImageUrl,
+        name: "Kseniya Maltseva",
+        role: "Team Lead at Educate Online",
         details: [
           "Requirements are crisp, priorities are stable, and changes are communicated early.",
           "She protects the team’s focus and keeps the feedback loop tight with stakeholders."
@@ -161,9 +156,23 @@ export const siteContent = {
       },
       {
         quote:
-          "Brings clarity and momentum: strong research, crisp communication, and a consistent bias toward measurable outcomes.",
-        name: "Name Surname",
-        role: "Growth Lead",
+          "Kristina's strategic vision and organizational skills were key in organizing our marketing initiatives.",
+        highlight: "strategic vision and organizational skills",
+        modalImageSrc: everypixelAlinaImageUrl,
+        name: "Alina Valyaeva",
+        role: "PR&Content Lead at Everypixel",
+        details: [
+          "She comes prepared: multiple solution options, risk analysis, and clear measurement plans.",
+          "Her discovery work is fast but grounded — it reduces uncertainty rather than producing slides."
+        ]
+      },
+      {
+        quote:
+          "Her collaborative approach in working with other project teams, developers, and market experts significantly enhanced the eﬀectiveness of the project.",
+        highlight: "collaborative approach",
+        modalImageSrc: everypixelDmitryImageUrl,
+        name: "Dmitry Shironosov",
+        role: "CEO at Everypixel",
         details: [
           "She frames the problem, sets the success metrics, and keeps everyone aligned on the next best action.",
           "Delivery is steady, and decisions are always grounded in evidence rather than opinions."

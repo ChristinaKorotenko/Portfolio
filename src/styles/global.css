@@ -1353,6 +1353,9 @@ a {
   position: relative;
   overflow: hidden;
   transition: transform 180ms ease, opacity 180ms ease, background 180ms ease, border-color 180ms ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .quote:hover {
@@ -1415,6 +1418,18 @@ a {
 .modal--pdf {
   width: min(920px, 100%);
   max-height: min(90vh, 900px);
+}
+
+.modal--image {
+  width: min(920px, 100%);
+  max-height: min(90vh, 900px);
+}
+
+.modal-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
 }
 
 .modal-pdf-wrap {
@@ -1616,7 +1631,8 @@ a {
 }
 
 .quote figcaption {
-  margin-top: 14px;
+  margin-top: auto;
+  padding-top: 14px;
   display: grid;
   gap: 3px;
 }
@@ -1630,6 +1646,13 @@ a {
   font-size: 13px;
   color: var(--muted);
   font-family: Arial, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+.quote-highlight {
+  background: rgba(255, 60, 200, 0.22);
+  box-shadow: 0 0 0 1px rgba(255, 60, 200, 0.18) inset;
+  border-radius: 6px;
+  padding: 0 4px;
 }
 
 .quote-mark {

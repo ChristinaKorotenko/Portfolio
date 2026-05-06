@@ -3,10 +3,31 @@ import { useMemo, useState } from "react";
 import { Modal } from "../../components/Modal/Modal";
 import { PdfRasterPages } from "../../components/PdfRasterPages/PdfRasterPages";
 
+function renderQuoteWithHighlight(quote, highlight) {
+  if (typeof quote !== "string" || typeof highlight !== "string" || !highlight) return quote;
+  const idx = quote.indexOf(highlight);
+  if (idx === -1) return quote;
+  const before = quote.slice(0, idx);
+  const after = quote.slice(idx + highlight.length);
+  return (
+    <>
+      {before}
+      <span className="quote-highlight">{highlight}</span>
+      {after}
+    </>
+  );
+}
+
 export function TestimonialsSection() {
   const { testimonials } = siteContent;
   const [active, setActive] = useState(null);
   const items = useMemo(() => testimonials.items, [testimonials.items]);
+
+  const modalClassName = active?.modalPdfSrc
+    ? "modal--pdf"
+    : active?.modalImageSrc
+      ? "modal--image"
+      : "";
 
   return (
     <section
@@ -48,7 +69,7 @@ export function TestimonialsSection() {
                 <span className="quote-mark" aria-hidden="true">
                   “
                 </span>
-                {t.quote}
+                {renderQuoteWithHighlight(t.quote, t.highlight)}
                 <span className="quote-mark" aria-hidden="true">
                   ”
                 </span>
@@ -65,19 +86,23 @@ export function TestimonialsSection() {
       <Modal
         open={Boolean(active)}
         title={active ? `${active.name} — ${active.role}` : ""}
-        className={active?.modalPdfSrc ? "modal--pdf" : ""}
+        className={modalClassName}
         onClose={() => setActive(null)}
       >
         {active ? (
           active.modalPdfSrc ? (
             <PdfRasterPages src={active.modalPdfSrc} />
+          ) : active.modalImageSrc ? (
+            <div className="modal-media">
+              <img src={active.modalImageSrc} alt="" />
+            </div>
           ) : (
             <>
               <p className="modal-quote">
                 <span className="quote-mark" aria-hidden="true">
                   “
                 </span>
-                {active.quote}
+                {renderQuoteWithHighlight(active.quote, active.highlight)}
                 <span className="quote-mark" aria-hidden="true">
                   ”
                 </span>
