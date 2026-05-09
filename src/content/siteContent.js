@@ -186,8 +186,8 @@ export const siteContent = {
       "I value projects that encourage curiosity, a systematic approach, and a bit of creativity.",
     email: "christina.korotenko@gmail.com",
     links: [
-      { label: "LinkedIn", href: "#" },
-      { label: "Instagram", href: "#" }
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/kristina-korotenko-b26779337/" },
+      { label: "Instagram", href: "https://www.instagram.com/chriissttyyna?igsh=MTVudG1pc2Zzdzcw" }
     ]
   }
 };

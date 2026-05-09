@@ -153,9 +153,7 @@ export function ProjectsSection() {
                     {p.tags.map((tag, i) => (
                       <span
                         key={`${p.name}-${tag}-${i}`}
-                        className={
-                          i === 0 ? "tag tag-invert" : "tag tag-invert tag-invert-muted"
-                        }
+                        className="tag tag-invert"
                       >
                         {tag}
                       </span>

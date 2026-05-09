@@ -22,16 +22,20 @@ export function FooterSection() {
           <a className="footer-link footer-link--left" href={`mailto:${footer.email}`} aria-label="Email">
             Email
           </a>
-          {footer.links.map((l) => (
-            <a
-              key={l.label}
-              className="footer-link"
-              href={l.href}
-              aria-label={`${l.label} link`}
-            >
-              {l.label}
-            </a>
-          ))}
+          {footer.links.map((l) => {
+            const isExternal = /^https?:\/\//i.test(l.href);
+            return (
+              <a
+                key={l.label}
+                className="footer-link"
+                href={l.href}
+                aria-label={`${l.label} link`}
+                {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              >
+                {l.label}
+              </a>
+            );
+          })}
         </div>
       </div>
     </footer>

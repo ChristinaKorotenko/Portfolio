@@ -24,7 +24,7 @@ export function HeroSection() {
             <span className="hero-scribble" aria-hidden="true">
               〰〰〰
             </span>{" "}
-            <span className="hero-main">I’m Kristina.</span>
+            <span className="hero-main hero-name">I’m Kristina.</span>
             <br />
             <span className="hero-main">
               Product &amp; Project Manager based in Berlin
