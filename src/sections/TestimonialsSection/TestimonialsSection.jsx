@@ -1,5 +1,5 @@
 import { siteContent } from "../../content/siteContent";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Modal } from "../../components/Modal/Modal";
 import { PdfRasterPages } from "../../components/PdfRasterPages/PdfRasterPages";
 
@@ -21,13 +21,44 @@ function renderQuoteWithHighlight(quote, highlight) {
 export function TestimonialsSection() {
   const { testimonials } = siteContent;
   const [active, setActive] = useState(null);
+  const [imageMeta, setImageMeta] = useState({});
   const items = useMemo(() => testimonials.items, [testimonials.items]);
+
+  // Preload modal images so the first popup opens at its real size with no
+  // layout jump. We also remember the natural aspect ratio per image so we
+  // can reserve space in the modal before the bitmap is decoded.
+  useEffect(() => {
+    const sources = items
+      .map((t) => t.modalImageSrc)
+      .filter(Boolean);
+    let cancelled = false;
+    sources.forEach((src) => {
+      const img = new Image();
+      img.decoding = "async";
+      img.src = src;
+      img.onload = () => {
+        if (cancelled) return;
+        if (img.naturalWidth && img.naturalHeight) {
+          setImageMeta((prev) => (
+            prev[src]
+              ? prev
+              : { ...prev, [src]: img.naturalWidth / img.naturalHeight }
+          ));
+        }
+      };
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [items]);
 
   const modalClassName = active?.modalPdfSrc
     ? "modal--pdf"
     : active?.modalImageSrc
       ? "modal--image"
       : "";
+
+  const activeAspect = active?.modalImageSrc ? imageMeta[active.modalImageSrc] : undefined;
 
   return (
     <section
@@ -93,8 +124,16 @@ export function TestimonialsSection() {
           active.modalPdfSrc ? (
             <PdfRasterPages src={active.modalPdfSrc} />
           ) : active.modalImageSrc ? (
-            <div className="modal-media">
-              <img src={active.modalImageSrc} alt="" />
+            <div
+              className="modal-media"
+              style={activeAspect ? { aspectRatio: activeAspect } : undefined}
+            >
+              <img
+                src={active.modalImageSrc}
+                alt=""
+                decoding="async"
+                loading="eager"
+              />
             </div>
           ) : (
             <>

@@ -77,7 +77,7 @@ a {
   display: grid;
   grid-template-columns: 1.25fr 1fr;
   gap: 36px;
-  align-items: start;
+  align-items: center;
 }
 
 .about-me-left {
@@ -122,10 +122,10 @@ a {
 
 .about-me-glow {
   position: absolute;
-  width: min(360px, 70%);
-  height: 120px;
+  width: min(280px, 62%);
+  height: 130px;
   left: 50%;
-  top: calc(50% + 150px);
+  top: calc(50% + 90px);
   transform: translateX(-50%);
   background:
     radial-gradient(circle at 20% 40%, rgba(255, 133, 247, 0.55), transparent 62%),
@@ -197,8 +197,8 @@ a {
 
 .about-me-photo-wrap {
   position: relative;
-  width: min(420px, 100%);
-  max-width: 80%;
+  width: min(280px, 100%);
+  max-width: 62%;
   aspect-ratio: 1 / 1;
   border-radius: 18px;
   overflow: hidden;
@@ -1393,7 +1393,8 @@ a {
     0 0 0 1px rgba(255, 255, 255, 0.55) inset,
     0 28px 80px rgba(0, 0, 0, 0.28);
   transform-origin: 50% 50%;
-  animation: modalPopIn 220ms cubic-bezier(0.2, 0.9, 0.2, 1) both;
+  animation: modalPopIn 240ms cubic-bezier(0.2, 0.9, 0.2, 1) both;
+  contain: layout paint;
 }
 
 .modal--pdf {
@@ -1406,11 +1407,27 @@ a {
   max-height: min(90vh, 900px);
 }
 
+.modal-media {
+  position: relative;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 14px;
+  overflow: hidden;
+  min-height: 360px;
+}
+
 .modal-media img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
   border-radius: 14px;
+  animation: modalMediaFadeIn 220ms ease both;
+}
+
+@keyframes modalMediaFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .modal-pdf-wrap {
@@ -1762,7 +1779,7 @@ a {
   .testimonials-grid { grid-template-columns: 1fr; }
 
   .about-me-photo-wrap {
-    width: min(320px, 100%);
+    width: min(260px, 100%);
     max-width: 100%;
     transform: rotate(2deg);
   }
