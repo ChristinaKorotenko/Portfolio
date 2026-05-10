@@ -485,7 +485,9 @@ a {
   transform: translateY(-0.12em);
   /* Fixed per design: green */
   color: rgb(66, 196, 109);
+  -webkit-text-fill-color: rgb(66, 196, 109);
   letter-spacing: -0.12em;
+  font-variant-emoji: text;
 }
 
 .hero-main {
@@ -581,6 +583,18 @@ a {
 
 .hero-action-link:hover .hero-action-text::after {
   clip-path: inset(0 0 0 0 round 999px);
+}
+
+/* Touch devices: keep underlines fully expanded so the first tap navigates
+   instead of triggering a sticky :hover state, and remove the reveal animation. */
+@media (hover: none) {
+  .hero-action-text::after {
+    clip-path: inset(0 0 0 0 round 999px);
+    transition: none;
+  }
+  .hero-action-link {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 .hero-action-link--1 {
@@ -1750,6 +1764,17 @@ a {
 
   .hero-actions-inline { flex-wrap: wrap; }
 
+  /* Touch + stacked hero: gradient bars fully drawn, no clip-path reveal */
+  @media (pointer: coarse) {
+    .hero-action-text::after {
+      clip-path: inset(0 0 0 0 round 999px);
+      transition: none;
+    }
+    .hero-action-link {
+      -webkit-tap-highlight-color: transparent;
+    }
+  }
+
   .manifesto-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .projects-grid,
   .testimonials-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -1789,6 +1814,15 @@ a {
   .hero-name {
     display: block;
     white-space: nowrap;
+  }
+
+  /* Narrow screens: always expanded bars (some phones report hover: hover) */
+  .hero-action-text::after {
+    clip-path: inset(0 0 0 0 round 999px);
+    transition: none;
+  }
+  .hero-action-link {
+    -webkit-tap-highlight-color: transparent;
   }
 
   .footer-actions {

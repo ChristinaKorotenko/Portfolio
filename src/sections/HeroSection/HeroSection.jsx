@@ -22,7 +22,7 @@ export function HeroSection() {
           <h1 className="hero-title hero-title--ref">
             <span className="hero-hi">Hi there!</span>{" "}
             <span className="hero-scribble" aria-hidden="true">
-              〰〰〰
+              {"〰\uFE0E〰\uFE0E〰\uFE0E"}
             </span>{" "}
             <span className="hero-main hero-name">I’m Kristina.</span>
             <br />
