@@ -44,7 +44,7 @@ export function HeroSection() {
               <a className="hero-action-link hero-action-link--1" href="#projects" aria-label="Projects">
                 <span className="hero-action-text">Projects</span>
               </a>
-              <a className="hero-action-link hero-action-link--2" href="#about" aria-label="About me">
+              <a className="hero-action-link hero-action-link--2" href="#about-me" aria-label="About me">
                 <span className="hero-action-text">About me</span>
               </a>
               <a className="hero-action-link hero-action-link--3" href="#footer" aria-label="Contact">
