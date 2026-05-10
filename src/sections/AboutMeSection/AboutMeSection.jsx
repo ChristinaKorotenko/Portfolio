@@ -52,7 +52,7 @@ export function AboutMeSection() {
             Besides, I enjoy breaking down complex ideas and have published several{" "}
             <a
               className="about-me-link"
-              href="https://www.linkedin.com/in/kristina-korotenko-b26779337/details/publications/"
+              href="https://www.linkedin.com/in/kristina-korotenko-b26779337/"
               target="_blank"
               rel="noopener noreferrer"
             >
